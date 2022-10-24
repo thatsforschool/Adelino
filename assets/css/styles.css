@@ -1,0 +1,599 @@
+:root {
+  --yellow: #f1aa40;
+  --dark-blue: #383878;
+  --light-blue: #a3d0ee;
+  --black: #0d0303;
+  --footer-text: #ffffff;
+  --text: #313030;
+  --container: #ebebeb;
+}
+/*defining color variables for future use*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8vw;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+section {
+  margin: 0;
+  margin-top: 10vh;
+  padding: 0;
+}
+
+article {
+  text-align: center;
+  margin: 0;
+  margin-top: 10vh;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+
+h1 {
+  margin: 0 10vh;
+  font-size: 2vw;
+  color: var(--yellow);
+}
+
+h2 {
+  margin: 0.5vh 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.2vw;
+  color: var(--yellow);
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  text-transform: uppercase;
+}
+
+h2 > a {
+  text-decoration: none;
+}
+
+.h2-light_blue {
+  color: var(--light-blue);
+  text-decoration-color: var(--light-blue);
+}
+
+.h2-dark_blue {
+  color: var(--dark-blue);
+  text-decoration-color: var(--dark-blue);
+}
+
+.h2-catalouge {
+  margin: 5vh 20vh;
+}
+
+.h2-catalouge-yellow {
+  color: var(--yellow);
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.1vw;
+  text-transform: uppercase;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  color: var(--text);
+  font-size: 1vw;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.9vw;
+  text-transform: none;
+  font-weight: 500;
+}
+/*VIDEO*/
+
+video {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* NAV */
+
+.header-logo {
+  margin: 2.5vh 0;
+  padding: 0;
+  width: 10vh;
+}
+
+nav {
+  margin: 0 20vh;
+  margin-bottom: 0;
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  text-transform: uppercase;
+}
+
+nav > * {
+  flex: 1 100%;
+}
+/*multiplying flex by element, all elements (div and a) are going to be 100% by flexbase*/
+
+button {
+  font-size: 0.8vw;
+  color: var(--text);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.nav-buttons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--light-blue);
+  padding: 2.5vh;
+  z-index: 1;
+}
+
+.nav-dropdown-content a {
+  color: var(--text);
+  display: block;
+  text-decoration: none;
+  text-transform: none;
+}
+
+nav i {
+  margin-left: 0.5em;
+  color: var(--text);
+}
+
+nav > .nav-buttons > a {
+  margin: 0;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.8vw;
+}
+
+.nav-margin1 {
+  margin: 0 5vh;
+}
+.nav-margin2 {
+  margin: 0;
+  margin-left: 5vh;
+}
+
+nav > .nav-buttons > a:hover {
+  color: var(--light-blue);
+  font-weight: bold;
+}
+
+.nav-dropdown:hover button {
+  color: var(--light-blue);
+  font-weight: bold;
+}
+
+.nav-dropdown:hover i {
+  color: var(--light-blue);
+  font-weight: bold;
+}
+
+.nav-dropdown-content a:hover {
+  color: var(--dark-blue);
+  text-decoration-color: var(--dark-blue);
+  font-weight: bold;
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+  display: block;
+}
+
+/* Sections */
+
+.section-grid {
+  margin: 0 20vh;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 60vh;
+  grid-template-areas: "text image";
+  background-color: var(--container);
+}
+
+.grid-text {
+  grid-area: text;
+  align-self: center;
+  justify-self: center;
+  margin: 0 5vh;
+}
+
+.grid-text-right {
+  grid-area: image;
+}
+
+.grid-text > a {
+  text-decoration: none;
+}
+.section-img {
+  grid-area: image;
+}
+.section-img > img {
+  object-fit: cover;
+  width: 100%;
+  height: 60vh;
+}
+
+.section-img-left {
+  grid-area: text;
+}
+
+.section-text {
+  margin-top: 2.5vh;
+}
+
+.section-text-white {
+  margin-top: 2.5vh;
+  padding: 2.5vh;
+  background-color: var(--footer-text);
+}
+
+.button-discover {
+  margin: 2.5vh 20vh 0 0;
+  padding: 0.5vh;
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+}
+
+.button-right {
+  text-align: right;
+}
+
+.button-discover:hover {
+  background-color: var(--yellow);
+  color: var(--footer-text);
+}
+
+.button-discover-light-blue {
+  color: var(--light-blue);
+  border: 2px solid var(--light-blue);
+}
+
+.button-discover-light-blue:hover {
+  color: var(--footer-text);
+  background-color: var(--light-blue);
+}
+
+.button-discover-dark-blue {
+  color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+}
+
+.button-discover-dark-blue:hover {
+  color: var(--footer-text);
+  background-color: var(--dark-blue);
+}
+
+/*CATALOUGES*/
+
+#alcoholCatalouge,
+#pantryCatalouge,
+#homeCatalouge {
+  margin: 0 20vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#alcoholCatalouge > section,
+#pantryCatalouge > section,
+#homeCatalouge > section {
+  margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+#alcoholCatalouge > section > img,
+#pantryCatalouge > section > img,
+#homeCatalouge > section > img {
+  height: 20vh;
+  width: auto;
+  object-fit: cover;
+  transition: transform 0.5s;
+  align-self: center;
+}
+
+#alcoholCatalouge > section > h5,
+#pantryCatalouge > section > h5,
+#homeCatalouge > section > h5 {
+  margin-top: 5vh;
+  transition: transform 0.5s;
+  text-align: center;
+}
+
+#alcoholCatalouge > section:hover > img,
+#alcoholCatalouge > section:hover > h5,
+#pantryCatalouge > section:hover > img,
+#pantryCatalouge > section:hover > h5,
+#homeCatalouge > section:hover > img,
+#homeCatalouge > section:hover > h5 {
+  transform: translateY(-2.5vh);
+}
+
+#alcoholCatalouge > section,
+#pantryCatalouge > section,
+#homeCatalouge > section {
+  cursor: pointer;
+}
+
+#alcoholCatalouge > section:hover > h5 {
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+#pantryCatalouge > section:hover > h5 {
+  color: var(--light-blue);
+  font-weight: 700;
+}
+
+#homeCatalouge > section:hover > h5 {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+/* FILTERS */
+
+.filters {
+  margin: 0;
+  padding: 0 20vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.filters > button {
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+}
+
+.filters > button:hover {
+  background-color: var(--yellow);
+  color: var(--footer-text);
+}
+
+/*CATALOG PAGES*/
+
+.crumb {
+  margin: 10vh 20vh;
+}
+
+.crumb > a {
+  margin-right: 2.5vh;
+  text-decoration: none;
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.crumb > a:hover {
+  color: var(--yellow);
+}
+
+.crumb > a::after {
+  content: " / ";
+  margin: 0 5vh;
+  color: var(--text);
+}
+
+.catalogues {
+  margin: 10vh 20vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.catalogues > article {
+  margin: 0 10vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+article > img {
+  margin: 10vh 0 5vh 0;
+  height: 40vh;
+  width: auto;
+  object-fit: contain;
+}
+
+article > a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.9vw;
+}
+
+article > img,
+article > a {
+  transition: transform 0.5s;
+}
+
+article:hover > img,
+article:hover > a {
+  transform: translateY(-2.5vh);
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+/*PRODUCT PAGE*/
+
+.product {
+  margin: 0 20vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-items: center;
+  align-items: center;
+}
+.h4-products {
+  color: var(--text);
+  margin: 2.5vh 10vh;
+}
+
+.p-products {
+  margin: 0 10vh;
+  margin-bottom: 5vh;
+  padding-right: 20vh;
+}
+
+.img-product > img {
+  margin: 0;
+  margin-right: 10vh;
+  object-fit: contain;
+  height: 70vh;
+  max-width: 60vh;
+  width: auto;
+}
+
+.content-product > a {
+  margin: 0 10vh;
+  color: var(--yellow);
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/*FOOTER*/
+
+footer {
+  font-size: 0.8vw;
+  margin-top: 10vh;
+  background-color: var(--dark-blue);
+  color: var(--footer-text);
+}
+
+.footer-grid {
+  display: grid;
+  margin: 0;
+  padding: 2.5vh 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr;
+  justify-items: center;
+  grid-template-areas:
+    ". logo arrow"
+    "info contact adress";
+}
+
+.footer-text {
+  color: var(--footer-text);
+}
+
+.footer-logo {
+  margin: 0;
+  padding: 0;
+  grid-area: logo;
+}
+
+.footer-logo-size {
+  height: 8vh;
+}
+
+.footer-arrow {
+  grid-area: arrow;
+}
+
+footer > .footer-grid > .footer-arrow > a > i {
+  font-size: 1.3vw;
+}
+
+.footer-arrow > a {
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+.footer-arrow > a:hover {
+  color: var(--light-blue);
+}
+
+.footer-info {
+  grid-area: info;
+}
+
+.footer-links {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  margin-top: 2.5vh;
+}
+
+.footer-links > a {
+  font-weight: 700;
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+.footer-links > a:hover {
+  color: var(--light-blue);
+}
+
+.footer-contact {
+  grid-area: contact;
+  margin-top: 2.5vh;
+}
+
+.footer-contact > .footer-text > i {
+  transform: rotateY(180deg);
+  margin-right: 0.5vh;
+}
+
+.footer-contact > a > i {
+  color: var(--footer-text);
+  font-size: 1.3vw;
+  margin: 0 0.5vh 0 0;
+}
+
+.footer-adress {
+  grid-area: adress;
+}
+
+.footer-rights {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+}
+
+.footer-rights > p {
+  margin: 0;
+  padding: 2.5vh 0;
+  color: var(--light-blue);
+  text-align: center;
+}
+
+/* możesz zmienić to ja dodałam */
+
+.itemArt > img {
+  max-height: 40vh;
+  max-width: 40vh;
+}

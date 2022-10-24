@@ -1,0 +1,77 @@
+/*HEADER IMG*/
+
+header {
+    background-image: url(./photos/wine-tasting.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 40vh
+}
+
+
+/* NAV */
+
+button {
+    color: var(--footer-text);
+    font-weight: 600;
+}
+
+nav i {
+    color: var(--footer-text);
+}
+
+nav > .nav-buttons > a {
+    color: var(--footer-text);
+    font-weight: 600;
+}
+
+
+/* Sections */
+
+.grid-text {
+    margin: 0 10vh;
+}
+
+.grid-text-right {
+    margin: 0 10vh;
+}
+
+.section-text-white > a {
+    text-decoration: underline;
+    text-decoration-color: var(--yellow);
+}
+
+.section-text-white > a:hover > p {
+    color: var(--yellow);
+}
+
+
+/* REVIEWS SECTION*/
+
+.reviews {
+    margin: 0 20vh;
+    padding: 5vh;
+    background-color: var(--container);
+}
+
+.reviews-p {
+    margin-top: 2.5vh;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: auto;
+}
+
+.reviews-p-color {
+    padding: 2.5vh;
+    background-color: var(--footer-text);
+    width: 40vh;
+}
+
+
+
+
+
+
+

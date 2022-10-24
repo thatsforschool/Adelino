@@ -1,0 +1,44 @@
+/*HEADER BACKGROUND*/
+
+header {
+    background-color: var(--dark-blue);
+    width: 100%;
+    height: 10vh;
+}
+
+
+/* NAV */
+
+button {
+    color: var(--footer-text);
+    font-weight: 600;
+}
+
+nav i {
+    color: var(--footer-text);
+}
+
+nav > .nav-buttons > a {
+    color: var(--footer-text);
+    font-weight: 600;
+}
+
+
+/* Sections */
+
+.grid-text-right {
+    margin: 0 10vh;
+}
+
+.section-text-white > a {
+    text-decoration: underline;
+    text-decoration-color: var(--yellow);
+}
+
+.section-text-white > a:hover > p {
+    color: var(--yellow);
+}
+
+
+
+
